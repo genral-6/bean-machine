@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bean Machine - القائمة</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to bottom, #2F1B0E 20%, #F9F5F0 20%);
+      color: #1E0D00;
+      margin: 0;
+      padding: 20px;
+      direction: rtl;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: #fffaf5;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+      border: 1px solid #e0d6cc;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    h1 {
+      color: #D4AF37;
+      font-size: 2.8em;
+      margin: 0;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+    h2 {
+      color: #2F1B0E;
+      border-bottom: 2px dashed #D4AF37;
+      padding-bottom: 8px;
+      margin-top: 25px;
+      text-align: center;
+    }
+    .icon {
+      font-size: 1.4em;
+      margin-right: 8px;
+    }
+    .menu {
+      display: grid;
+      gap: 25px;
+    }
+    .item {
+      display: flex;
+      justify-content: space-between;
+      padding: 8px 0;
+      border-bottom: 1px dotted #ddd;
+    }
+    .item:last-child {
+      border-bottom: none;
+    }
+    .price {
+      font-weight: bold;
+      color: #2F1B0E;
+    }
+    .free {
+      color: #2e8b57;
+      font-weight: bold;
+    }
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      padding-top: 20px;
+      color: #5a4a40;
+      font-size: 1em;
+      border-top: 1px solid #e0d6cc;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Bean Machine</h1>
+      <p>مشروبات طازجة • حلويات منزلية • تجربة لا تُنسى</p>
+    </header>
+
+    <div class="menu">
+      <section>
+        <h2><span class="icon">☕</span> المشروبات</h2>
+        <div class="item"><span>كورتادو</span><span class="price">$10</span></div>
+        <div class="item"><span>إسبريسو</span><span class="price">$10</span></div>
+        <div class="item"><span>قهوة سوداء</span><span class="price">$11</span></div>
+        <div class="item"><span>قهوه سعودي سادا</span><span class="price">$10</span></div>
+        <div class="item"><span>قهوة سعودي باللبن</span><span class="price">$10</span></div>
+        <div class="item"><span>شاي كرك</span><span class="price">$10</span></div>
+        <div class="item"><span>شاي بين ماشين</span><span class="price">$10</span></div>
+        <div class="item"><span>قهوة بيضاء موكا مثلجة</span><span class="price">$10</span></div>
+        <div class="item"><span>كولد بيرا</span><span class="price">$10</span></div>
+        <div class="item"><span>شاي بالكركديه مثلج</span><span class="price">$10</span></div>
+        <div class="item"><span>عصير برتقال مثلج</span><span class="price">$10</span></div>
+        <div class="item"><span>سوبيا حمراء</span><span class="price">$13</span></div>
+        <div class="item"><span>سوبيا عادي</span><span class="price">$13</span></div>
+        <div class="item"><span>بالانجو (عصير ليمون)</span><span class="price">$13</span></div>
+        <div class="item"><span>ايس دريب</span><span class="price">$10</span></div>
+      </section>
+
+      <section>
+        <h2><span class="icon">🍰</span> الأكلات</h2>
+        <div class="item"><span>كلاسيك دونات</span><span class="price">$10</span></div>
+        <div class="item"><span>كرواسون</span><span class="price">$10</span></div>
+        <div class="item"><span>كلاسيك كوكيز</span><span class="price">$10</span></div>
+        <div class="item"><span>بانكيك</span><span class="price">$10</span></div>
+        <div class="item"><span>كعكة شوكولاتة</span><span class="price">$10</span></div>
+        <div class="item"><span>كعكة فراولة</span><span class="price">$10</span></div>
+        <div class="item"><span>أم علي</span><span class="price">$14</span></div>
+        <div class="item"><span>ترمبه</span><span class="price">$9</span></div>
+        <div class="item"><span>حلوى الجبنة</span><span class="price">$9</span></div>
+        <div class="item"><span>كليجة</span><span class="price">$15</span></div>
+        <div class="item"><span>لقيمات</span><span class="price">$12</span></div>
+        <div class="item"><span>بقلواة</span><span class="price">$11</span></div>
+        <div class="item"><span>عصيدة</span><span class="price">$11</span></div>
+        <div class="item"><span>عريكة</span><span class="price">$11</span></div>
+        <div class="item"><span>دولما (ورق عنب)</span><span class="price">$12</span></div>
+      </section>
+
+      <section>
+        <h2><span class="icon">📦</span> خدمات إضافية</h2>
+        <div class="item"><span>علبة تغليف</span><span class="price free">مجانًا</span></div>
+        <div class="item"><span>واي فاي داخلي</span><span class="price">$50</span></div>
+      </section>
+    </div>
+
+    <footer>
+      <p>📍 <strong>الحديقة العامة، بجانب البنك</strong></p>
+      <p>🕒 مفتوح يوميًا من 7 ص حتى 11 م</p>
+      <p>💬 تواصل معنا علي الخط الساخن للطلب</p>
+    </footer>
+  </div>
+</body>
+</html>
